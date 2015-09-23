@@ -3,7 +3,28 @@ sdk-android
 
 SDK in Java (Android) for THECALLR API
 
-## Dependencies
+## Installation (Gradle) ![](https://img.shields.io/github/tag/stetro/sdk-android.svg?label=JitPack)
+
+__Step 1.__ Add the [JitPack](https://jitpack.io/) repository to your build file:
+
+```groovy
+repositories {
+    // ...
+    maven { url "https://jitpack.io" }
+}
+```
+
+__Step 2.__ Add the dependency in the form:
+
+```groovy
+dependencies {
+	compile 'com.github.stetro:sdk-android:8d478406ed'
+}
+```
+
+
+## Installation (manually)
+
 Thecallr API is in JSON which need to be parsed.
 This SDK is based on google-gson to parse json.
 So it need to be added as well as our SDK in you project (see [jars](jars/) folder).
