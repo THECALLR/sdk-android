@@ -8,6 +8,8 @@ buildscript {
     }
 }
 
+group 'com.thecallr'
+
 repositories {
     mavenCentral()
 }
