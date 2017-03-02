@@ -11,10 +11,10 @@ So it need to be added as well as our SDK in you project (see [jars](jars/) fold
 See [https://code.google.com/p/google-gson/](https://code.google.com/p/google-gson/) for more information on google-gson.
 and [https://commons.apache.org/proper/commons-codec/](https://commons.apache.org/proper/commons-codec/) for the apache commons codec.
 
-The [jars](jars/) folder contains the jar of the CALLR SDK.
+The [jars](jars/) folder contains the jar of the CALLR Java SDK.
 
 ## Basic Example (Send SMS)
-See full example in [samples](samples/)
+See full example in [samples](samples/) - This can be imported into Android Studio as a gradle based project.
 
 ```java
 // Set your credentials
