@@ -18,7 +18,7 @@ See full example in [samples](samples/) - This can be imported into Android Stud
 
 ```java
 // Set your credentials
-Api tc = new Api("login", "password");
+Api tc = new Api(new LoginPasswordAuth("login", "password"), null);
 
 Hashtable<String, Object> param = new Hashtable<String, Object>();
 param.put("flash_message", false);
