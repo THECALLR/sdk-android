@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.callr.exceptions.CallrException;
+import com.callr.auth.*;
 import com.callr.Api;
 
 public class MainActivity extends Activity {
@@ -26,7 +27,7 @@ public class MainActivity extends Activity {
     public void sendSMS(View view){
         String phoneNumber = ((EditText)findViewById(R.id.editPhonenumber)).getText().toString();
         String message = ((EditText)findViewById(R.id.editMessage)).getText().toString();
-        Api api = new Api("login", "password");
+        Api api = new Api(new LoginPasswordAuth("login", "password"), null);
         try {
             api.call("sms.send","SMS", phoneNumber, message, null);
         } catch (CallrException e) {
